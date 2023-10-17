@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> 
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css" integrity="sha512-AZtJoEn5SfSZimv10x5NMO2gaZCdoU8nxtHJK8O4SbKNlQeb1ggkvf0b0QixuuXIjX3Tp5jzBbTWajki81Vl2g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+}
+#navlink{
+position: relative;
+color: #000;
+font-weight: 700;
+transition: 1.2s;
+}
+
+#navlink::after{
+content: "";
+position: absolute;
+width: 0%;
+height: 2.7px;
+background-color:  #000;
+left: 0;
+bottom: -4px;
+transition: ease .43s;
+}
+#navlink:hover::after{
+width: 100%;
+}
+#navlink:hover{
+    color: rgb(255, 8, 0);
+}
+
+
+
+#btn{
+    padding: 1.1% 3%;
+    border:none;
+    border-radius: 0px;
+    border: 1.5px solid #fff;
+    color: #000000c7;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;    
+    background-color: transparent;
+transition:  all 0.5s ease-in-out;
+
+}
+#btn:hover{
+    background-color:#171A20;
+    color: #fff;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+*::selection{
+    background-color:rgba(255, 0, 0, 0.712);
+    color: #fff;
+}
+.home{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.home{
+  width: 100%;
+  height: 100%;
+  background-image: url("./par.jpg");
+  background-position: center;
+  background-size: cover;
+
+  background-repeat: no-repeat;
+}
+
+h1{
+  font-family: TESLA;
+  text-align: center;
+  padding-top: 20px;
+  color: rgba(255, 0, 0, 0.712);
+  font-size: 50px;
+  font-weight: 700;
+}
+.home img{
+  width: 100%;
+  height: 100vh;
+}
+.text{
+
+  padding-top: 50px;
+}
+h2{
+  color: #000;
+  text-align: center;
+}
+.name{
+  font-family: TESLA;
+  color: rgba(255, 0, 0, 0.712);
+}
+p{
+  text-align: center;
+color: #000000a6;
+}
+.btn-p{
+  display: flex;
+  justify-content: center;
+
+}
+    </style>
+</head>
+<body>
+    
+
+  
+  
+  
+  <nav style="background: transparent; box-shadow: none;" class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+                <a style="
+                  font-family: TESLA; color: rgba(255, 0, 0, 0.712);" class="navbar-brand" href="#">TESLA</a>
+                <button style="color: #000;"
+                  class="navbar-toggler"
+                  type="button"
+                  data-mdb-toggle="collapse"
+                  data-mdb-target="#navbarNav"
+                  aria-controls="navbarNav"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a id="navlink" class="nav-link active" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                      <a id="navlink" class="nav-link active" href="#">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                      <a id="navlink" class="nav-link active" href="#">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item">
+                      <a id="navlink" class="nav-link active" href="#">LOGIN / SIGNUP</a>
+                      
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+              <div class="home">
+<div class="text">
+   <h1>TESLA</h1>
+   <h2>By <span class="name">ELON MUSK</span></h2>
+   <p>We’re building a world powered by solar energy, running on batteries and transported by electric <br> vehicles. Explore the most recent impact of our products, people and supply chain.</p>
+<div class="btn-p">
+  <button id="btn">Explore Impact</button>
+
+</div>
+  </div>
+              </div>
+
+
+
+
+              <!-- about sec -->
+              <h1>ABOUT</h1>
+              <!-- about sec -->
+
+
+
+
+
+
+    
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js" integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js" integrity="sha512-IHDCHrefnBT3vOCsvdkMvJF/MCPz/nBauQLzJkupa4Gn4tYg5a6VGyzIrjo6QAUy3We5HFOZUlkUpP0dkgE60A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js" integrity="sha512-rXm6RiYDlz+aZC/ht75tGzeAmCg4gVfBA6Be5s5uENSahiXkgwEy10J2Cc+dxUAW4lRRQYbS5pugMOqBrs8ksw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+</li>
