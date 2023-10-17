@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> 
     <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css" integrity="sha512-AZtJoEn5SfSZimv10x5NMO2gaZCdoU8nxtHJK8O4SbKNlQeb1ggkvf0b0QixuuXIjX3Tp5jzBbTWajki81Vl2g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    
 <style>
@@ -150,7 +149,12 @@ color: #000;
 .text-about #btn{
   border: 1px solid black;
 }
-
+#djnjbnjn{
+  font-family: TESLA;
+  color: rgba(255, 0, 0, 0.712);
+  font-weight: 800;
+  font-size: 25px;
+}
     </style>
 
 </head>
@@ -183,12 +187,7 @@ color: #000;
                     <li class="nav-item">
                       <a id="navlink" class="nav-link active" href="#">ABOUT</a>
                     </li>
-                    <li class="nav-item">
-                      <a id="navlink" class="nav-link active" href="#">PORTFOLIO</a>
-                    </li>
-                    <li class="nav-item">
-                      <a id="navlink" class="nav-link active" href="#">LOGIN / SIGNUP</a>
-                      
+                   
                     </ul>
                   </div>
                 </div>
@@ -213,7 +212,7 @@ color: #000;
                 <h1>ABOUT</h1>
               <div class="container">
                 <div class="card-sec">
-                  <h2 class="about-h2">ABOUT TESLA</h2>
+                  <h2 class="about-h2">ABOUT TESLA  <span> <i style="color: red;" id="heart"  class="fa-solid fa-heart"></i></span></h2>
                   <hr>
                   <div class="text-about">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quaerat quod qui sint temporibus dicta corrupti quos delectus ex iste, nesciunt tempore obcaecati error ullam ad veritatis est natus deleniti.
@@ -221,13 +220,13 @@ color: #000;
                    <button id="btn">
   Read More
                    </button>
-                   <button id="btn">
+                   <button onclick="myLike()" class="btnlike" id="btn">
   Like It
                    </button>
                 </div>
                   </div>
                 <div class="card-sec">
-                  <h2 class="about-h2">ABOUT CAR</h2>
+                  <h2 class="about-h2">ABOUT CAR  <span> <i style="color: red;" id="heart"  class="fa-solid fa-heart"></i></span></h2>
                   <hr>
                   <div class="text-about">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quaerat quod qui sint temporibus dicta corrupti quos delectus ex iste, nesciunt tempore obcaecati error ullam ad veritatis est natus deleniti.
@@ -235,13 +234,13 @@ color: #000;
                    <button id="btn">
   Read More
                    </button>
-                   <button id="btn">
+                   <button onclick="myLike()"  class="btnlike" id="btn">
   Like It
                    </button>
                 </div>
                   </div>
                 <div class="card-sec">
-                  <h2 class="about-h2">ABOUT FUNCTION</h2>
+                  <h2 class="about-h2">ABOUT ENERGY  <span> <i style="color: red;" id="heart"  class="fa-solid fa-heart"></i></span></h2>
                   <hr>
                   <div class="text-about">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quaerat quod qui sint temporibus dicta corrupti quos delectus ex iste, nesciunt tempore obcaecati error ullam ad veritatis est natus deleniti.
@@ -249,13 +248,13 @@ color: #000;
                    <button id="btn">
   Read More
                    </button>
-                   <button id="btn">
+                   <button onclick="myLike()"  class="btnlike"  id="btn">
   Like It
                    </button>
                 </div>
                   </div>
                 <div class="card-sec">
-                  <h2 class="about-h2">ABOUT TYRE</h2>
+                  <h2 class="about-h2">ABOUT TYRE  <span> <i  style="color: red;" id="heart"  class="fa-solid fa-heart"></i></span></h2>
                   <hr>
                   <div class="text-about">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quaerat quod qui sint temporibus dicta corrupti quos delectus ex iste, nesciunt tempore obcaecati error ullam ad veritatis est natus deleniti.
@@ -263,13 +262,13 @@ color: #000;
                    <button id="btn">
   Read More
                    </button>
-                   <button id="btn">
+                   <button onclick="myLike()"  class="btnlike"  id="btn">
   Like It
                    </button>
                 </div>
                   </div>
                 <div class="card-sec">
-                  <h2 class="about-h2">ABOUT ENGINE</h2>
+                  <h2 class="about-h2">ABOUT ENGINE  <span> <i style="color: red;"  id="heart"  class="fa-solid fa-heart"></i></span></h2>
                   <hr>
                   <div class="text-about">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quaerat quod qui sint temporibus dicta corrupti quos delectus ex iste, nesciunt tempore obcaecati error ullam ad veritatis est natus deleniti.
@@ -277,13 +276,13 @@ color: #000;
                    <button id="btn">
   Read More
                    </button>
-                   <button id="btn">
+                   <button onclick="myLike()"  class="btnlike"  id="btn">
   Like It
                    </button>
                 </div>
                   </div>
                 <div class="card-sec">
-                  <h2 class="about-h2">ABOUT FOUNDER</h2>
+                  <h2 class="about-h2">ABOUT FOUNDER  <span> <i style="color: red;"  id="heart" class="fa-solid fa-heart"></i></span></h2>
                   <hr>
                   <div class="text-about">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quaerat quod qui sint temporibus dicta corrupti quos delectus ex iste, nesciunt tempore obcaecati error ullam ad veritatis est natus deleniti.
@@ -291,8 +290,8 @@ color: #000;
                  <div class="btn-about">
                   <button id="btn">
                     Read More
-                                     </button>
-                                     <button id="btn">
+                  </button>
+                                     <button onclick="myLike()"  class="btnlike" id="btn">
                     Like It
                                      </button>
                  </div>
@@ -300,17 +299,66 @@ color: #000;
                   </div>
               </div>
               </div>
+              <br>
+              <hr>
               <!-- about sec -->
+              <br>
+<br>
+              <footer class="bg-dark text-center text-white">
+                <!-- Grid container -->
+                <div class="container p-4 pb-0">
+                  <!-- Section: Form -->
+                  <section class="">
+                    <form action="">
+                      <!--Grid row-->
+                      <div class="row d-flex justify-content-center">
+                        <!--Grid column-->
+                        <div class="col-auto">
+                          <p class="pt-2">
+                            <strong>Sign up for our newsletter</strong>
+                          </p>
+                        </div>
+                        <!--Grid column-->
+              
+                        <!--Grid column-->
+                        <div class="col-md-5 col-12">
+                          <!-- Email input -->
+                          <div class="form-outline form-white mb-4">
+                            <input type="email" id="form5Example29" class="form-control" />
+                            <label class="form-label" for="form5Example29">Email address</label>
+                          </div>
+                        </div>
+                        <!--Grid column-->
+              
+                        <!--Grid column-->
+                        <div class="col-auto">
+                          <!-- Submit button -->
+                          <button type="submit" class="btn btn-outline-light mb-4">
+                           <span id="djnjbnjn">
+                            TESLA
+                           </span>
+                          </button>
+                        </div>
+                        <!--Grid column-->
+                      </div>
+                      <!--Grid row-->
+                    </form>
+                  </section>
+                  <!-- Section: Form -->
+                </div>
+                <!-- Grid container -->
+              
+                <!-- Copyright -->
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                  © 2020 Copyright:
+                  <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+                </div>
+                <!-- Copyright -->
+              </footer>
 
 
 
 
-
-
-    
-  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js" integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js" integrity="sha512-IHDCHrefnBT3vOCsvdkMvJF/MCPz/nBauQLzJkupa4Gn4tYg5a6VGyzIrjo6QAUy3We5HFOZUlkUpP0dkgE60A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js" integrity="sha512-rXm6RiYDlz+aZC/ht75tGzeAmCg4gVfBA6Be5s5uENSahiXkgwEy10J2Cc+dxUAW4lRRQYbS5pugMOqBrs8ksw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
